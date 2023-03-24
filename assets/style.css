@@ -1,43 +1,67 @@
 :root{
+    --primary:mistyrose;
+    --secondary:hotpink;
+    --tertiary:darkgrey;
 
 }
 
 body{
-
+    background-color: var(--primary);
 }
 
 header{
-
+    text-align: center;
 }
 
 h1{
-
+    color: var(--secondary);
 }
 
 header p{
 
 }
+p{
+    color:var(--tertiary);
+}
 
 main{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card{
-    /* display: flex; */
+    margin: 20px;
+    width: 33.33%;
+    border:solid var(--tertiary);
+    justify-content: center;
 }
 
 h2{
-
+    display: relative;
+    margin-top: -20px;
+    text-align: center;
 }
 
 .card p{
-
+    display: absolute;
+    text-align: center;
+    padding:5px;
+    margin-top: 5px;
 }
 
 .info{
-
+    /* display: ; */
+    flex-wrap: wrap;
+    flex:1;
+    width:33.33%;
+    padding: 2px;
 }
 
 .info:focus{
+    
+}
+
+@media screen {
     
 }
