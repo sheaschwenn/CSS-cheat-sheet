@@ -27,13 +27,18 @@ main{
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
     margin: 20px;
-    min-width: 20%;
-    align-content: center;
+    /* min-width: 20%; */
+    align-items: center;
     justify-content: center;
     border:solid var(--tertiary);
     border-radius: 4%;   
-    flex: 1 0 32%;
+    flex: 1 0 0;
+    text-align: center;
+    padding:10px;
+   
 }
 
 .card:hover{
@@ -42,17 +47,14 @@ main{
 }
 
 h2{
-    display: absolute;
+    display: relative;
     border:solid var(--tertiary);
     border-radius: 10%;
-    padding: 5px;
+    padding: 20px;
     color: var(--secondary);
     width: 50%;
     background-color: var(--primary);
-    display: relative;
     margin-top: -20px;
-    text-align: center;
-    z-index: 0;
 }
 
 .card p{
@@ -62,10 +64,20 @@ h2{
     margin-top: 5px;
 }
 
-pre{
+.info{
     color: var(--tertiary);
-    width:33.33%;
+    width:100%;
     padding: 10px;
+    user-select: all;
+    min-width: 400px;
+    background-image: linear-gradient(var(--primary) ,var(--secondary));
+    border: solid var(--tertiary);
+    border-radius: 4%;
+    text-align: left;
+    width:80%;
+    /* align-self: center; */
+   
+    
 }
 
 
